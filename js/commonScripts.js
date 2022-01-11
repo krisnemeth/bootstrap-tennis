@@ -11,6 +11,11 @@ document.getElementById('calendar').addEventListener('click', function(){
     gotoURL('players.html');
 })
 
+document.getElementById('shoppingCart').addEventListener('click', function(){
+    console.log('button clicked')
+    gotoURL('merch.html');
+})
+
 function gotoURL(URL){
     document.location.href = URL;
 }

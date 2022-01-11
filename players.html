@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Tennis Events 2022</a>
+                <a class="navbar-brand" href="#">Tennis 2022</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -26,10 +26,13 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Australia Open</a>
+                            <a class="nav-link" aria-current="page" href="./index.html">Info</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Wimbledon</a>
+                            <a class="nav-link active" href="./players.html">Players</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./merch.html">Merchandise</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +42,92 @@
 
 
     <main>
-        <h1 class="display-2">Page 2</h1>
+        <h1 class="display-2 mt-5 mb-4 pt-4 text-center">Players</h1>
+
+        <div class="px-2">
+			<p><strong>Type into the input field to search the table:</strong></p>
+			<div class="input-group mb-3">
+				<span class="input-group-text bg-warning"><i class="bi bi-search"></i></span>
+				<input class="form-control" type="text" id="searchInfo" placeholder="Search...">
+			</div>
+			
+		</div>
+
+        <div class="px-2">
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Events</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Wins</th>
+                    <th scope="col">Rank</th>
+                  </tr>
+                </thead>
+                <tbody id="players">
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mens's Singles</td>
+                    <td>Liam Broady</td>
+                    <td>28</td>
+                    <td>36%</td>
+                    <td>201</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mens's Singles</td>
+                    <td>Yosuke Watanuki</td>
+                    <td>23</td>
+                    <td>50%</td>
+                    <td>266</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Women's Singles</td>
+                    <td>Destanee Aiava</td>
+                    <td>21</td>
+                    <td>25%</td>
+                    <td>316</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Women's Singles</td>
+                    <td>Dalma Galfi</td>
+                    <td>23</td>
+                    <td>43%</td>
+                    <td>223</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Mens's Singles</td>
+                    <td>Andrew Harris</td>
+                    <td>27</td>
+                    <td>33%</td>
+                    <td>382</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Mens's Singles</td>
+                    <td>J. J. Wolf</td>
+                    <td>23</td>
+                    <td>25%</td>
+                    <td>174</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Women's Singles</td>
+                    <td>Reka Luca Jani</td>
+                    <td>30</td>
+                    <td>35%</td>
+                    <td>170</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        
+
+
     </main>
 
     <footer class="footer mt-auto py-1 bg-dark text-white fixed-bottom">
@@ -55,6 +143,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/search.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
